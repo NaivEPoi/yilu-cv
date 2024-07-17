@@ -123,8 +123,8 @@ sections:
   #       # Card background color (CSS class)
   #       css_class: "bg-primary-700"
   #       css_style: ""
-  - block: markdown
-    content:
-      title: TAShips
-      text: "- CMPSC 461: Programming Language Concepts (Fall 2022, Spring 2023, Spring 2024)"
+  # - block: markdown
+  #   content:
+  #     title: TAShips
+  #     text: "- CMPSC 461: Programming Language Concepts (Fall 2022, Spring 2023, Spring 2024)"
 ---
