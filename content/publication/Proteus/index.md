@@ -1,13 +1,17 @@
 ---
-title: 'Formal Analysis of Access Control Mechanism of 5G Core Network'
+title: 'State Machine Mutation-based Testing Framework for Wireless Communication Protocols'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Mujtahid Akon
-  - Tianchang Yang
+  - Syed Md Mukit Rashid
+  - Tianwei Wu
+  - Kai Tu
+  - Abdullah Al Ishtiaq
+  - Ridwanul Hasan Tanvir
   - admin
+  - Omar Chowdhury
   - Syed Rafiul Hussain
 
 # Author notes (optional)
@@ -15,8 +19,8 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2023-11-21T00:00:00Z'
-doi: '10.1145/3576915.3623113'
+date: '2024-10-14T00:00:00Z'
+# doi: '10.1145/3576915.3623113'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -27,17 +31,20 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 2023 ACM SIGSAC Conference on Computer and Communications Security*
-publication_short: In *CCS 23*
+publication: In *the 2024 ACM SIGSAC Conference on Computer and Communications Security*
+publication_short: In *CCS 24*
 
-abstract: We present 5GCVerif, a model-based testing framework designed to formally analyze the access control framework of the 5G Core. With its modular design, 5GCVerif employs various abstraction techniques to craft an abstract model that captures the intricate details of the 5G Core’s access control mechanism. This approach offers customizability and extensibility in constructing the abstract model and addresses the state explosion problem in model checking. 5GCVerif also sidesteps the challenge of exhaustively generating models for all possible core network configurations by restricting the model checker to explore policy violations only within the valid network configurations. Using 5GCVerif, we evaluated 55 security properties, leading to the discovery of five new vulnerabilities in 5G Core’s access control mechanism. The uncovered vulnerabilities can result in multiple attacks including unauthorized entry to sensitive information, illegitimate access to services, and denial-of-services.
+abstract: This paper proposes Proteus, a protocol state machine, property-guided, and budget-aware automated testing approach for discovering logical vulnerabilities in wireless protocol implementations. Proteus maintains its budget awareness by generating test cases (ie, each being a sequence of protocol messages) that are not only meaningful (ie, the test case mostly follows the desirable protocol flow except for some controlled deviations) but also have a high probability of violating the desirable properties. To demonstrate its effectiveness, we evaluated Proteus in two different protocol implementations, namely 4G LTE and BLE, across 23 consumer devices (11 for 4G LTE and 12 for BLE). Proteus discovered 26 unique vulnerabilities, including 113 instances. Affected vendors have positively acknowledged 12 vulnerabilities through 5 CVEs. 
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - Formal Verfication
-  - 5G Core Network
+  - 5G devices
+  - Bluetooth
+  - Software Testing
+  - Fuzzing
+  - Vulnerbility Research
 
 # Display this page in the Featured widget?
 featured: true
@@ -47,8 +54,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '5GCVerif-ccs23.pdf'
-url_code: 'https://github.com/SyNSec-den/5GCVerif'
+url_pdf: 'Proteus-ccs24.pdf'
+url_code: 'https://github.com/SyNSec-den/Proteus'
 url_dataset: ''
 url_poster: ''
 url_project: ''

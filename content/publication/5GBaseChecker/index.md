@@ -1,13 +1,16 @@
 ---
-title: 'Formal Analysis of Access Control Mechanism of 5G Core Network'
+title: 'Logic Gone Astray: A Security Analysis Framework for the Control Plane Protocols of 5G Basebands'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Mujtahid Akon
-  - Tianchang Yang
+  - Kai Tu
+  - Abdullah Al Ishtiaq
+  - Syed Md Mukit Rashid
   - admin
+  - Weixuan Wang
+  - Tianwei Wu
   - Syed Rafiul Hussain
 
 # Author notes (optional)
@@ -15,8 +18,8 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2023-11-21T00:00:00Z'
-doi: '10.1145/3576915.3623113'
+date: '2024-08-14T00:00:00Z'
+# doi: '10.1145/3576915.3623113'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -27,17 +30,18 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 2023 ACM SIGSAC Conference on Computer and Communications Security*
-publication_short: In *CCS 23*
+publication: In *the 33rd USENIX Security Symposium*
+publication_short: In *USENIX Security 24*
 
-abstract: We present 5GCVerif, a model-based testing framework designed to formally analyze the access control framework of the 5G Core. With its modular design, 5GCVerif employs various abstraction techniques to craft an abstract model that captures the intricate details of the 5G Core’s access control mechanism. This approach offers customizability and extensibility in constructing the abstract model and addresses the state explosion problem in model checking. 5GCVerif also sidesteps the challenge of exhaustively generating models for all possible core network configurations by restricting the model checker to explore policy violations only within the valid network configurations. Using 5GCVerif, we evaluated 55 security properties, leading to the discovery of five new vulnerabilities in 5G Core’s access control mechanism. The uncovered vulnerabilities can result in multiple attacks including unauthorized entry to sensitive information, illegitimate access to services, and denial-of-services.
+abstract: We develop 5GBaseChecker—an efficient, scalable, and dynamic security analysis framework based on differential testing for analyzing 5G basebands' control plane protocol interactions. 5GBaseChecker first captures basebands' protocol behaviors as a finite state machine (FSM) through black-box automata learning. To facilitate efficient learning and improve scalability, 5GBaseChecker introduces novel hybrid and collaborative learning techniques. 5GBaseChecker then identifies input sequences for which the extracted FSMs provide deviating outputs. Finally, 5GBaseChecker leverages these deviations to efficiently identify the security properties from specifications and use those to triage if the deviations found in 5G basebands violate any properties. We evaluated 5GBaseChecker with 17 commercial 5G basebands and 2 open-source UE implementations and uncovered 22 implementation-level issues, including 13 exploitable vulnerabilities and 2 interoperability issues. 
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - Formal Verfication
-  - 5G Core Network
+  - 5G devices
+  - Software Testing
+  - Vulnerbility Research
 
 # Display this page in the Featured widget?
 featured: true
@@ -47,8 +51,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '5GCVerif-ccs23.pdf'
-url_code: 'https://github.com/SyNSec-den/5GCVerif'
+url_pdf: 'usenixsecurity24-tu.pdf'
+url_code: 'https://github.com/SyNSec-den/5GBaseChecker.git'
 url_dataset: ''
 url_poster: ''
 url_project: ''
