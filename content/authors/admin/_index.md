@@ -47,9 +47,10 @@ profiles:
     url: https://orcid.org/0009-0005-5062-9493/
 
 interests:
-  - Network and System Security
-  - Commucation Protocols
+  - Systems Security
+  - Communication Protocols Security
   - Software Testing
+  - Applied Cryptography
 
 education:
   - area: Ph.D. in Computer Science and Engineering
