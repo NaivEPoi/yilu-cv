@@ -28,7 +28,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *the 30th European Wireless Conference*
-publication_short: In *EW 25*.
+publication_short: In *EW 25*
 
 abstract: The 6 GHz spectrum, recently opened for unlicensed use under Wi-Fi 6E and Wi-Fi 7, overlaps with frequencies used by mission-critical incumbent systems such as public safety communications and utility infrastructure. To prevent interference, the FCC mandates the use of Automated Frequency Coordination (AFC) systems, which assign safe frequency and power levels based on Wi-Fi Access Point (AP)-reported locations. In this work, we demonstrate that GPS-based location reporting, which Wi-Fi APs use, can be spoofed using inexpensive, off-the-shelf radio equipment. This enables attackers to manipulate AP behavior, gain unauthorized spectrum access, cause harmful interference, or disable APs entirely by spoofing them into foreign locations. We validate these attacks in a controlled lab setting against a commercial AP and evaluate a commercial AFC system under spoofed scenarios. Our findings highlight critical gaps in the security assumptions of AFC and motivate the need for stronger location integrity protections. 
 

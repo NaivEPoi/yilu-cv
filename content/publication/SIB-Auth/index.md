@@ -28,7 +28,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *the 18th ACM Conference on Security and Privacy in Wireless and Mobile Networks*
-publication_short: In *WiSec 25*.
+publication_short: In *WiSec 25*
 
 abstract: As 5G and future generations of mobile networks aim to provide faster and more secure wireless connections, 5G broadcast messages remain unprotected. Hence, a user device cannot verify the identity of a base station before establishing the connection and starting the registration procedure. This long-existing loophole enables various types of fake base station (FBS) attacks. To protect end-users from these attacks, a practical solution is to introduce a digital signature for these broadcast messages. However, an FBS may also have the ability to relay a digitally signed broadcast message from a benign base station to bypass the protection. Considering that a relayed message needs extra time to reach a user device, a time-bounded defense mechanism can be used on top of the digital signature to offer replay protection. Although previous work proposed such a solution, none have implemented it or evaluated it against relay attacks. Hence, to evaluate the performance of our proposed digital signature scheme and the time-bounded defense, we implemented the solution against relay attacks using an open-source 5G system. Our results show that the overhead introduced is acceptable and that the time-bounded defense is effective against relay attacks.
 

@@ -33,7 +33,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *the 34th USENIX Security Symposium*
-publication_short: In *USENIX Security 25*.
+publication_short: In *USENIX Security 25*
 
 abstract: We develop CoreCrisis, a stateful black-box fuzz-testing framework for 5G core network (5GC) implementations. Unlike previous stateful security analysis efforts of cellular networks which rely on manually-crafted, static test inputs and are limited to identifying only logical errors, CoreCrisis employs a dynamic two-step approach. Initially, CoreCrisis builds an initial finite state machine (FSM) representation of the 5GC's implementation using only benign (i.e., positive) inputs with its efficient and scalable divide-and-conquer and property-driven equivalence checking learning. During fuzzing, it utilizes the learned FSM to target underexplored states and introduces state-aware mutations to generate and test attacking (i.e., negative) inputs. Based on the responses observed from the core network, CoreCrisis continuously refines the FSM to better guide its exploration and find vulnerabilities. Evaluating CoreCrisis on three open-source and one commercial 5GC implementations, we identified 7 categories of deviations from the technical specifications and 13 crashing vulnerabilities. These logical and crashing vulnerabilities lead to denial-of-service, authentication bypass, and billing fraud.
 
