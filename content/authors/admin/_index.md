@@ -158,5 +158,5 @@ work:
 ---
 
 ## About Me
-
-Yilu Dong is a Ph.D. student from [SyNSec Lab](https://synsec-den.github.io/) at Penn State University, supervised by [Dr. Syed Rafiul Hussain](https://syed-rafiul-hussain.github.io/). He has experience with 4G and 5G systems on both the UE (user equipment) side and the network (base stations and core) side and found mutiple vulnerbilities in cellular protocol implementations. He also has a board interest in the computer security area and enjoys exploring new topics.  
+ 
+Yilu Dong is a Ph.D. student from the [SyNSec Lab](https://synsec-den.github.io/) at Penn State University, supervised by [Dr. Syed Rafiul Hussain](https://syed-rafiul-hussain.github.io/). He has experience with 4G and 5G systems on both the UE (user equipment) side and the network (base stations and core) side, and found multiple vulnerabilities in cellular protocol implementations. He also has a broad interest in the computer security area and enjoys exploring new topics. 
