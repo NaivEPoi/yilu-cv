@@ -1,5 +1,5 @@
 ---
-title: 'A Systematic Threat Analysis and Practical Attacks on Automated Frequency Coordination Systems'
+title: 'Practical Attacks on AFC Clients in Wi-Fi Access Points'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -7,6 +7,7 @@ title: 'A Systematic Threat Analysis and Practical Attacks on Automated Frequenc
 authors:
   - admin
   - Tianchang Yang
+  - Nathaniel Bennett
   - Arupjyoti Bhuyan
   - Syed Rafiul Hussain
 
@@ -15,7 +16,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2026-05-04T00:00:00Z'
+date: '2026-05-11T00:00:00Z'
 # doi: '10.1145/3576915.3623113'
 
 # Schedule page publish date (NOT publication's date).
@@ -27,10 +28,10 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 23rd USENIX Symposium on Networked Systems Design and Implementation*
-publication_short: In *NSDI 26*
+publication: In *Dynamic and Innovative Spectrum Sharing Workshop*
+publication_short: In *DISS*
 
-abstract: The 6 GHz band, traditionally reserved for mission-critical incumbent systems such as public safety communications, utility infrastructure, and fixed satellite services, has recently been opened for Wi-Fi devices. This expansion introduces a critical coexistence challenge of ensuring that unlicensed Wi-Fi Access Points (APs) do not interfere with incumbent operations. To manage this risk, regulators mandated the use of Automated Frequency Coordination (AFC) systems that assign spectrum access to Wi-Fi APs based on their locations. In this work, we present the first systematic security analysis of AFC systems. In particular, we analyze the trust assumptions of AFC systems and uncover design lapses and deployment mishaps in this model. Our analysis reveals that the AFC's dependence on unauthenticated data sources, including GNSS/GPS and Wi-Fi-based localization (for location), DNS (for service discovery), and NTP (for time synchronization), creates practical off-path attack vectors that allow adversaries to manipulate control-plane parameters without breaking cryptographic protections between APs and AFC servers. For example, using inexpensive, off-the-shelf software-defined radios, an off-path adversary can spoof the GPS signals received by an AP, falsifying its reported location to either disable 6 GHz transmissions or cause harmful interference with incumbent services. We validate these vectors empirically on commercial APs from four major vendors and evaluate four commercial and one open-source AFC servers to measure real-world impact. We also propose potential mitigations and analyze the trade-offs between usability and security to formulate our recommendations to harden AFC deployments and 6 GHz APs.  
+abstract: The Automated Frequency Coordination (AFC) system enables secure spectrum sharing between Standard Power Wi-Fi APs and 6 GHz incumbents. However, compromised AFC components risk causing harmful interference. In this work, we demonstrate the first practical attack against commercial Wi-Fi APs by impersonating an AFC server to inject forged availableSpectrumInquiryResponse messages. By exploiting flawed client-side implementations, we successfully launch targeted interference and denial-of-service (DoS) attacks within protected frequencies. Our findings underscore the critical need for a more rigorous and prescriptive AFC specification.
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -48,7 +49,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'AFC_Attacks_NSDI.pdf'
+url_pdf: 'afc_testing_DISS.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
